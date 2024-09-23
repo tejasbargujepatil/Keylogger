@@ -1,0 +1,4 @@
+# KeyLogger Project Requirements
+
+pynput==1.7.6  # For capturing keyboard input
+requests==2.28.1  # For sending log data to the server
